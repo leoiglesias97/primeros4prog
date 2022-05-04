@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>
+    </head>
+    <body>
+        <form>
+            <h2>por favor complete los campos</h2>
+            <div>                                       <!--con el div se puede pasar de renglon( aunque no se usa para eso)-->
+                <label for="nombre">nombre:</label>
+                <input id="nombre" type="text" placeholder="pone tu nombre gil">         <!-- el id es UNICO por valor, es decir que solo puede haber una sola informacion en cada id, en este caso solo un solo nombre para el id "nombre"-->
+            </div>
+            <div>
+                <label for="superHeroe">superheroe favorito:</label>
+                    <select id="superHeroe">
+                        <option>batman</option>
+                        <option>superman</option>
+                        <option>deadpool</option>
+                    </select>
+            </div>
+
+            <div>
+                <label >Te gusta harry potter???</label>
+                <input name="harrypotter" type="radio" id="si">
+                <label for="si">si</label>
+                <input name="harrypotter" type="radio" id="no">
+                <label for="no">no</label>
+            </div>
+            <div>
+                <label for="descripcion">describi como te sentis:</label>
+                <br>
+                <textarea  id="descripcion" cols="40" rows="10"></textarea>
+            </div>
+
+
+            <button>Enviar</button>                 <!--los 3 son lo mismo-->
+            <input type="button" value="enviar">
+            <input type="submit" value="enviar">
+
+        </form>
+    </body>
+</html>
